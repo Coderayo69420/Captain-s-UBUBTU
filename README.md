@@ -1,10 +1,11 @@
-# CAPTAIN'S UBUNTU
+# CAPTAIN'S UBUNTU 
+**Sailent Features**
 - Fixed audio output
 - Lightweight XFCE Desktop Environment
 - Only 3.5-4 GB
-
+- Both VNC Viewer and Termux: X11 supported
   *VIDEO TUTORIAL COMING SOON*
-  Comes installed with following applications
+  Comes installed with following **
   - VS CODE
   - MOUSEPAD
   - Thunar File Managar
@@ -33,8 +34,8 @@ This repository contains a script to set up a modified Ubuntu environment in Ter
 Before running the script, make sure you have **Termux** installed on your device. You can download it from [F-Droid](https://f-droid.org/packages/com.termux/).
 
 Additionally, this setup requires:
-- A **VNC viewer** app (e.g., VNC Viewer or any VNC client).
-- A terminal emulator app that supports `bash`.(Termux Recommended)
+- A **VNC viewer** app (e.g., VNC Viewer or any VNC client) [RVNC VIEWER](https://play.google.com/store/apps/details?id=com.realvnc.viewer.android) recommended.
+- [**Termux: X11**](https://github.com/termux/termux-x11/releases/tag/nightly) if you are using it instead. It is recommended as it performs better than vnc apps told by most users.
   
 *Installing Termux from Play store is not recommended as it is no longer maintained*
 
@@ -88,3 +89,18 @@ vncserver
 
 # Using Termux: X11
 **If you want to use Termux: X11 and not installed already then download from [here](https://github.com/termux/termux-x11/releases/tag/nightly)
+# Start the X11 session
+```
+startx
+```
+Now you should be able to connect to the VNC server using a VNC viewer app or Termux X11and access your Ubuntu desktop environment!
+
+# Commands to use
+Start VNC server: vncserver
+Start X11 session: startx
+Stop the VNC server: vncserver -kill :1 (Replace :1 with the display number if different)
+
+# Optional - Modify .bashrc for Custom Prompt
+The script sets a custom prompt (root@localhost), but you can modify it further in the ~/.bashrc file if desired.
+
+*Feel free to explore the repository for more updates and customizations.*
