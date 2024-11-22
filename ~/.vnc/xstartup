@@ -1,0 +1,19 @@
+#!/bin/bash
+# Default Xstartup file for VNC
+
+# Set the display resolution (optional, can be customized)
+export XKL_XMODMAP_DISABLE=1
+
+# Start the X environment with the specified window manager
+xrdb $HOME/.Xresources
+startfluxbox &  # You can replace fluxbox with any lightweight window manager or desktop environment (e.g., LXQt, Xfce)
+
+# Start a background terminal emulator (optional)
+xterm &
+
+# Start the VNC server's desktop environment (optional)
+lxsession &  # Replace this with your preferred session (e.g., startlxqt for LXQt, xfce4-session for XFCE)
+# Add other applications or processes you want to run here
+
+# Example: Start pulseaudio for audio in VNC (if required)
+pulseaudio --start --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1" --exit-idle-time=-1 &
