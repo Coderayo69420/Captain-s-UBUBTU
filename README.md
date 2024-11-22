@@ -15,7 +15,9 @@
   - Intellij Idea Community edition
   - VLC
   - Audacity
+
 *Function to choose which applications to install coming soon*
+
 Comes installed with following packages
 - lightdm
 - lxappearance
