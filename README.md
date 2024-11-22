@@ -4,8 +4,8 @@
 - Lightweight XFCE Desktop Environment
 - Only 3.5-4 GB
 - Both VNC Viewer and Termux: X11 supported
-  *VIDEO TUTORIAL COMING SOON*
-  Comes installed with following **
+
+   Comes installed with following **
   - VS CODE
   - MOUSEPAD
   - Thunar File Managar
@@ -26,6 +26,8 @@ Comes installed with following packages
 - glances
 - neofetch
 - htophtop
+
+*Video tutorial coming soon...*
 
 # Ubuntu Setup for Termux
 
